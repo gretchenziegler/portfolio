@@ -2,6 +2,7 @@ console.log("connected")
 
 window.onload = function(){
 
+	// projectLoad function to render projects to DOM
 	function projectLoad(){
 		$container.empty();
 		var $projectTemplate = $('#projects-template').html();
