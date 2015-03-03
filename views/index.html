@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gretchen Ziegler</title>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="./stylesheets/style.css">
+  <script type="text/javascript" src="./javascripts/main.js"></script>
+
+</head>
+<body>
+
+
+	<header>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<h1 id="gretchen">Gretchen Ziegler</h1>
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="https://github.com/gretchenziegler" target="_blank"><img src="./images/github-icon.png"></a></li>
+					<li><a href="https://www.linkedin.com/in/gretchenziegler" target="_blank"><img src="./images/linkedin-icon.png"></a></li>
+					<li><a href="https://profiles.generalassemb.ly/gretchenziegler" target="_blank"><img src="./images/ga-icon.jpeg"></a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<div class="col-sm-1">
+	<ul class="nav navbar-nav">
+		<li><h2><a href="#" id="project-button">Projects</a></h2></li><br>
+		<li><h2><a href="#" id="about-button">About</a></h2></li><br> 
+		<li><h2><a href="#" id="resume-button">Resume</a></h2></li>
+	</ul>
+</div>
+
+<div class="container col-sm-9 col-sm-offset-1">
+
+	<div id="container">
+	</div>
+
+<!--- Templates -->
+
+<script type="text/template" id="projects-template">
+	<h1>Projects</h1>
+
+	<div id="projectCarousel" class="carousel slide" data-ride="carousel">
+
+		<ol class="carousel-indicators">
+      <li data-target="#projectCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#projectCarousel" data-slide-to="1"></li>
+      <li data-target="#projectCarousel" data-slide-to="2"></li>
+      <li data-target="#projectCarousel" data-slide-to="3"></li>
+      <li data-target="#projectCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+
+			<div class="item active">
+				<div width=50% style="text-align:center; border-radius:5px; background:#fce17e">
+					<a href="http://pubwlkr.com" target="_blank"><h1>PubWlkr</h1></a>
+					<p style="font-size:1.5em">A sweet pub crawl generator.</p>
+				</div>
+				<br>
+				<img width=100% src="http://i.imgur.com/cnGDmeR.png">
+			</div>
+
+			<div class="item">
+				<div width=50% style="text-align:center; border-radius:5px; background:#fce17e">
+					<a href="http://104.131.63.60/" target="_blank"><h1>Whatchu Think About?</h1></a>
+					<p style="font-size:1.5em">A forum for anything and everything.</p>
+				</div>
+				<br>
+				<img width=100% src="http://i.imgur.com/vzimXy8.png">
+			</div>
+
+			<div class="item">
+				<div width=50% style="text-align:center; border-radius:5px; background:#fce17e">
+					<a href="#" target="_blank"><h1>Delicious Date Night</h1></a>
+					<p style="font-size:1.5em">A site that makes double dating easy and fun.</p>
+				</div>
+				<br>
+				<img width=100% src="http://i.imgur.com/ZafTCvI.png">
+			</div>
+
+			<div class="item">
+				<div width=50% style="text-align:center; border-radius:5px; background:#fce17e">
+					<a href="https://dl.dropboxusercontent.com/u/14280624/PSS%20Version%202.0/index.html" target="_blank"><h1>Park Slope Singers</h1></a>
+					<p style="font-size:1.5em">A site redesign for Park Slope Singers, a Brooklyn-based community choir.</p>
+				</div>
+				<br>
+				<img width=100% src="http://i.imgur.com/APnGsMQ.png">
+			</div>
+
+			<div class="item">
+				<div width=50% style="text-align:center; border-radius:5px; background:#fce17e">
+					<a href="#" target="_blank"><h1>Zombie Apocalypse Now</h1></a>
+					<p style="font-size:1.5em">An interactive zombie-themed contact list.</p>
+				</div>
+				<br>
+				<img width=100% src="http://i.imgur.com/WnDImsF.jpg">
+			</div>
+
+			<a class="left carousel-control" href="#projectCarousel" role="button" data-slide="prev">
+    		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    		<span class="sr-only">Previous</span>
+  		</a>
+
+		  <a class="right carousel-control" href="#projectCarousel" role="button" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		
+		</div>
+
+	</div>
+
+</script>
+
+<script type="text/template" id="about-template">
+	<h1>About Me</h1>
+	<div id="about" class="panel panel-default">
+		<div class="panel-body">
+			<h2>Web Developer | Educator | Artist</h2>
+			<br>
+			<div class="col-sm-3">
+				<img id="headshot" src="./images/headshot.jpg">
+			</div>
+
+			<div class="col-sm-9" style="font-size:1.4em; text-align:justify">
+				<p>My three greatest passions are education, the arts, and technology, all of which have contributed in various ways to the roles I have assumed in my life: teacher, actor, and most recently, web developer.</p>
+
+				<p>I’m at my happiest when I’m working on a project and “in the zone”; I love being so focused on creating that I lose track of time. I’m a tenacious and goal-oriented person, and will approach projects from many different angles in order to produce the best product possible.</p>
+			</div>
+			<div class="col-sm-12" style="font-size:1.4em; text-align:justify">
+				<p>My former position as a high school English teacher in the New York City Department of Education has had a great influence on my current professional aspirations. Working to fix the education crisis in our country is incredibly important to me, and I believe that part of the solution to this crisis can be found in developing technologies. I aspire to build applications for teachers that make their jobs more streamlined and efficient, and applications for students that facilitate their learning in an authentic way.</p>
+			</div>
+		</div>
+	</div>
+</script>
+
+<script type="text/template" id="resume-template">
+	<h1>Resume</h1>
+	<object width="100%" height="1100" data="./images/resume.pdf"></object>
+</script>
+
+</div>
+
+</body>
+</html>

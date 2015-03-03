@@ -1,0 +1,27 @@
+h1 {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+h2 {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+p {
+	font-family: 'Garamond', serif;
+	font-size: 1.25em;
+}
+
+#gretchen {
+	font-size: 2.75em;
+}
+
+#about {
+	background-color: #d4cfcf;
+	border-radius: 10px;
+}
+
+#headshot {
+	border-radius: 10px;
+	margin-top: 2%;
+}
+
